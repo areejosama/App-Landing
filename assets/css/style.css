@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: #814096;
+    --seccolor: #F83292;
+}
+/* start navbar */
+.navbar{
+    background-color: white;
+}
+.navbar-brand{
+    color: var(--maincolor)!important;
+    font-size: 25px;
+    font-weight: 700;
+}
+.navbar-brand span{
+    color: var(--seccolor);
+}
+.nav-link{
+    color: var(--maincolor) !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color:var(--seccolor) !important;
+}
+/* end navbar */
+/* start home */
+
+.home-image{
+    animation-name: mobile;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+} 
+.home-content{
+    direction: ltr;
+}
+
+.home{
+    background-image: url('../image/home-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    direction: rtl;
+    margin-bottom: 130px;
+}
+
+@keyframes mobile{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.content-h1{
+    color:var(--seccolor);
+}
+.btn{
+    background: linear-gradient(90deg, #814096, #F83292);
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+    display: inline-block;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+/* end home */
+/* start feature */
+.features{
+    background-color: #f8f9fa;
+}
+.features-h2, .about-heading, .review-h, .pricing-h, .contact-h{
+    color:#814096;
+    font-size: 35px;
+}
+.features-content{
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    min-height: 47px;
+    transition: 1s;
+}
+.features-content:hover{
+    transform: scale(1.03);
+}
+.fh2{
+    font-size: 25px;
+}
+.features p{
+    width: 90%;
+    margin: auto;
+}
+
+.about{
+    background-image: url('../image/about-bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 150px 0;
+
+}
+@media(max-width:768px){
+    .about{
+        background:white;
+    }
+}
+.letter{
+    background-image: url('../image/subscribe-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+.letter p{
+    width: 38%;
+}
+.input-group{
+    width:40%;
+}
+@media(max-width:768px){
+    .input-group{
+        width:80%;
+    }
+    .letter p{
+        width:80%;
+    }
+}
+.letter .form-control{
+    background: none;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.letter .form-control::placeholder{
+    color: white;
+    font-size: 18px;  
+}
+.letter .btn{
+    background: white;
+    color: var(--seccolor);
+    font-size: 18px;
+    font-weight: bolder;
+}
+.letter .btn:hover{
+    transform: none;
+}
+.click{
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 30px;
+}
+.review{
+    background-color: #f8f9fa;
+}
+.review-content{
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    transition: 1s;
+    padding: 20px 5px;
+}
+.review-content:hover{
+    transform: scale(1.03);
+}
+.quote{
+    font-size: 120px;
+    color: #F83292;
+    opacity: 0.3;
+    right: 15px;
+    top: 0;
+}
+.uname{
+    color:#F83292;
+}
+.fa-star, .fa-star-half-stroke{
+    color: #814096;
+}
+.pricing-content{
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    padding: 20px 5px;
+}
+.pcolor{
+    border: 3px solid #F83292;
+}
+.pricing-content:hover{
+    border: 3px solid var(--seccolor);
+    box-shadow: none;
+}
+.pcontent-h{
+    color: #814096;
+}
+.period{
+    font-size: 20px;
+}
+.pricing-content h2{
+    color:#F83292
+}
+.pricing .btn{
+    padding: 10px 40px;
+}
+.contact{
+    background-color: #f8f9fa;
+}
+.contact-content{
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    padding: 20px 5px;
+}
+.form-control{
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    color: white !important;
+}
+.contact-content label{
+    color: var(--seccolor);
+}
+footer{
+    background-image: url('../image/footer-bg.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.footer-items{
+    width: fit-content;
+    height: 35px;
+}
+.line{
+    left:0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.contact-info i{
+    color: var(--seccolor);
+}
+.fline{
+    display: block;
+    width:100%;
+    height: 2px;
+    background-color: white;
+}
